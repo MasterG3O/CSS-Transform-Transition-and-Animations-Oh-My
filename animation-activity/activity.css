@@ -27,17 +27,19 @@ nav {
   opacity: 1;
 }
 
-@keyframes top {
-  from {}
-  to {}
+@keyframes top { /**this is the top bar its gonna go down  **/
+   from { transform : rotate(0)}
+   to{transform: translateY(33.5px) rotate(45deg);}
+ 
 }
 
 @keyframes middle {
-  from {}
-  to {}
+  from {background-color:rebeccapurple;}
+  to {opacity: 0;}
 }
 
-@keyframes bottom {
-  from {}
-  to {}
+@keyframes bottom { /*bottom bar will go up*/
+  from {transform:rotate(0);}
+
+  to {transform: translateY(-33.5px) rotate(-45deg);}
 }
